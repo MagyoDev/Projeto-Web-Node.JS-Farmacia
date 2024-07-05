@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr.Boichi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav class="bg-green-600 p-4 flex items-center justify-between">
+        <div class="text-white text-2xl font-bold">
+            Dr. Boichi
+        </div>
+        <div class="flex-grow flex justify-center">
+            <div class="flex items-center space-x-4">
+                <a href="/" class="text-white hover:text-gray-200">Cadastrar Produtos</a>
+                <a href="/ConsProduto" class="text-white hover:text-gray-200">Consultar Produtos</a>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        {{{body}}}
+    </main>
+
+    <footer class="bg-green-700 text-white text-center p-4">
+        Dr.Boichi 2024
+    </footer>
+</body>
+</html>
+ 

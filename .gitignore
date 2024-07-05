@@ -1,0 +1,19 @@
+# Arquivos de configuração locais
+firebase-config.json
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Módulos e dependências Node.js
+node_modules/
+
+# Arquivos de log
+logs/
+*.log
+
+# Arquivos de ambiente
+.env
+
+# Outros arquivos
+*.swp

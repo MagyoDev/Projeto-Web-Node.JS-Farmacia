@@ -1,0 +1,35 @@
+<main class="flex-grow flex items-center justify-center w-full pt-10">
+        <form class="bg-green-500 p-6 rounded-lg shadow-lg flex items-center" action="/CadProduto" method="POST">
+            <div class="ml-6 flex-grow">
+                <div class="mb-4">
+                    <label for="productType" class="block text-white text-sm font-bold mb-2">Tipos de Produto</label>
+                    <select id="productType" name="productType" class="w-full p-2 rounded-lg bg-gray-200 text-black">
+                        <option value="type1">Medicamento Fitoterápico</option>
+                        <option value="type2">Medicamento Alopático</option>
+                        <option value="type3">Medicamento Homeopático</option>
+                        <option value="type4">Medicamento Similar</option>
+                        <option value="type5">Medicamento Genérico</option>
+                        <option value="type6">Medicamento de Referência</option>
+                        <option value="type7">Medicamento Manipulado</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="productName" class="block text-white text-sm font-bold mb-2">Nome do Produto</label>
+                    <input type="text" id="productName" name="productName" class="w-full p-2 rounded-lg bg-gray-200 text-black">
+                </div>
+                <div class="mb-4">
+                    <label for="validity" class="block text-white text-sm font-bold mb-2">Validade</label>
+                    <input type="date" id="validity" name="validity" class="w-full p-2 rounded-lg bg-gray-200 text-black">
+                </div>
+                <div class="mb-4">
+                    <label for="observations" class="block text-white text-sm font-bold mb-2">Observações</label>
+                    <textarea id="observations" name="observations" class="w-full p-2 rounded-lg bg-gray-200 text-black"></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button type="submit" class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded-full">
+                        Cadastrar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </main>

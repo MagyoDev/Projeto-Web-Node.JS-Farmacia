@@ -1,0 +1,39 @@
+<div class="container mx-auto px-4">
+    <h2 class="text-2xl font-bold mb-4 text-center">Editar Produto</h2>
+    <form action="/atualizar" method="POST" class="w-full max-w-lg mx-auto">
+        <input type="hidden" name="id" value="{{data.id}}">
+        
+        <div class="mb-4">
+            <label for="productType" class="block text-sm font-bold mb-2">Tipo de Produto:</label>
+            <select id="productType" name="productType" class="form-select w-full p-2 rounded-lg bg-gray-200 text-black">
+                <option value="" disabled>Selecione o tipo</option>
+                    <option value="type1">Medicamento Fitoterápico</option>
+                    <option value="type2">Medicamento Alopático</option>
+                    <option value="type3">Medicamento Homeopático</option>
+                    <option value="type4">Medicamento Similar</option>
+                    <option value="type5">Medicamento Genérico</option>
+                    <option value="type6">Medicamento de Referência</option>
+                    <option value="type7">Medicamento Manipulado</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <label for="productName" class="block text-sm font-bold mb-2">Nome do Produto:</label>
+            <input type="text" id="productName" name="productName" class="form-control w-full p-2 rounded-lg bg-gray-200 text-black" value="{{data.productName}}">
+        </div>
+
+        <div class="mb-4">
+            <label for="validity" class="block text-sm font-bold mb-2">Validade:</label>
+            <input type="date" id="validity" name="validity" class="form-control w-full p-2 rounded-lg bg-gray-200 text-black" value="{{data.validity}}">
+        </div>
+
+        <div class="mb-4">
+            <label for="observations" class="block text-sm font-bold mb-2">Observações:</label>
+            <textarea id="observations" name="observations" class="form-control w-full p-2 rounded-lg bg-gray-200 text-black" style="height: 100px;">{{data.observations}}</textarea>
+        </div>
+
+        <div class="mb-4 text-center">
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+    </form>
+</div>
